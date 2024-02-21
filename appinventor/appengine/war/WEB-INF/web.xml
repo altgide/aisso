@@ -59,6 +59,15 @@
     <servlet-name>RemoteApiServlet</servlet-name>
     <url-pattern>/remote_api</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpUserServlet</servlet-name>
+    <servlet-class>com.google.appinventor.server.UpUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpUserServlet</servlet-name>
+    <url-pattern>/UploadUser</url-pattern>
+  </servlet-mapping>
 
   <!-- REST interface Servlet -->
 
