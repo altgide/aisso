@@ -68,6 +68,15 @@
     <servlet-name>UpUserServlet</servlet-name>
     <url-pattern>/UploadUser</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AppAuthServlet</servlet-name>
+    <servlet-class>com.google.appinventor.server.AppAuthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppAuthServlet</servlet-name>
+    <url-pattern>/AppAuth</url-pattern>
+  </servlet-mapping>
 
   <!-- REST interface Servlet -->
 
