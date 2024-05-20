@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.image-container {
+  flex: 1;
+  background-image: url("IMG_20240506-WA0004_L.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  flex: 0 0 400px;  /* Adjust width as needed */
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Add styles for the login button */
+.login-container button {
+  padding: 0;  /* Remove default button padding */
+  border: none;  /* Remove default button border */
+  background-color: transparent; /* Set background to transparent */
+  cursor: pointer;
+}
+
+.login-container button img {
+  /* Style the login button image here */
+  width: 100%;  /* Adjust width as needed */
+  height: auto;
+}
+
+.landing-image {
+    border: none; /* Remove border */
+    background-color: transparent; /* Ensure background is transparent */
+    max-width: 100%;
+}

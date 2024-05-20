@@ -116,7 +116,7 @@ public class OdeAuthFilter implements Filter {
       if (uri.startsWith("/ode")) {
         httpResponse.setStatus(HttpServletResponse.SC_PRECONDITION_FAILED);
       } else {
-        httpResponse.sendRedirect("/login?redirect=" + uri);
+        httpResponse.sendRedirect("/AppAuth?redirect=" + uri);
       }
       return;
     }

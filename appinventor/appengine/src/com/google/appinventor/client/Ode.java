@@ -730,7 +730,7 @@ public class Ode implements EntryPoint {
                 Window.open(Urls.makeUri("/" + ServerLayout.YA_TOS_FORM), "_self", null);
                 break;
               case Response.SC_PRECONDITION_FAILED:
-                Window.Location.replace(Urls.makeUri("/login/"));
+                Window.Location.replace(Urls.makeUri("/AppAuth"));
                 break;           // likely not reached
               default:
                 break;
