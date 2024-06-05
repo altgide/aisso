@@ -1,11 +1,27 @@
 body {
   display: flex;
   min-height: 100vh;
+  flex-direction: row;
+  padding: 0;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    height: 100vh;
+    margin: 0;
+    font-family: "Roboto-Light", sans-serif;
+	/*font-size: 36px;*/
+	/*font-weight: 300;*/
+    background-color: #f7f7f7;
+}
+
+.half {
+    flex: 1;
+    display: flex;
 }
 
 .container {
   display: flex;
   flex-grow: 1;
+   height: 100vh;
 }
 
 .image-container {
@@ -15,18 +31,38 @@ body {
   background-position: center;
 }
 
+.left {
+  background: rgb(161,19,253);
+	background: linear-gradient(0deg, rgba(161,19,253,1) 0%, rgba(42,191,221,1) 80%, rgba(13,235,212,1) 100%);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-slogan {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
 .login-container {
-  flex: 0 0 400px;  /* Adjust width as needed */
-  padding: 50px;
+  /*flex: 0 0 400px;*/ 
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .login-container h1 {
-  margin-bottom: 20px;
+	font-family: "Roboto-Light", sans-serif;
+     font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 
 .login-container form {
@@ -34,9 +70,15 @@ body {
   max-width: 300px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.login-container input[type="email"],
+.login-form {
+    text-align: center;
+}
+
+/*.login-container input[type="email"]*/
 .login-container input[type="password"] {
   padding: 10px;
   margin-bottom: 10px;
@@ -71,4 +113,33 @@ body {
     border: none; /* Remove border */
     background-color: transparent; /* Ensure background is transparent */
     max-width: 100%;
+}
+
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 5px;
+    border-radius: 60px;
+    padding: 1px;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 255, 209, 1) 0%,
+      rgba(173, 0, 255, 1) 100%
+    );
+    box-sizing: border-box;
+}
+
+.input-wrapper input[class="email"] {
+    width: 100%;
+    padding: 25px 10px;
+    border: none;
+	/*border: 1px solid #ccc;*/
+    border-radius: 58px; /* Slightly smaller radius to fit within the wrapper */
+    font-size: 20px;
+    outline: none;
+    background: white;
+    position: relative;
+    box-sizing: border-box;
 }

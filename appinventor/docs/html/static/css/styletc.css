@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 90%;
+    height: auto;
+    max-height: 90vh; /* Ensures the content fits within the viewport */
+    overflow-y: auto; /* Enables scrolling within the container if necessary */
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2vw; /* Responsive font size based on viewport width */
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+p {
+    font-size: 1vw; /* Responsive font size based on viewport width */
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+li {
+    margin-bottom: 3px;
+    font-size: 1vw; /* Responsive font size based on viewport width */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 4vw;
+    }
+    p, li {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 5px;
+    }
+    h1 {
+        font-size: 5vw;
+    }
+    p, li {
+        font-size: 4vw;
+    }
+}
